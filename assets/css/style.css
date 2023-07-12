@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    box-sizing: border-box;
+    background-color: bisque;
+    margin: 0;
+    font-family: 'Satisfy', cursive;
+}
+
+header {
+    position: relative;
+    background-image: url(/assets/img/branding/wave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 1px 20px 5px black;
+    z-index: 1;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.div-logo {
+    background: transparent;
+}
+
+.logo {
+    width: 120px;
+    background: transparent;
+}
+
+.nav-menu {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    background: transparent;
+}
+
+.nav-a {
+    margin: 20px;
+    text-decoration: none; 
+    background: white;
+    font-size: 20px;
+    padding: 15px;
+    /* background: -webkit-linear-gradient(0deg, #e90000 0%, #ff7700 100%); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: rgba(255, 255, 255, 0.76);
+}
+
+
+
+/* DIV = BACKGROUND IMG */
+.div-banniere {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url(/assets/img/branding/bg2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+}
+
+#searchBar {
+    position: absolute;
+    top: 45%;
+    width: 450px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    font-size: 17px;
+    background: rgba(255, 255, 255, 0.64);
+}
+
+/* categorie de la page d'accueil */
+.div-body-categorie {
+    margin-top: 15px;
+}
+.title-categorie {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    text-decoration: 3px underline;
+}
