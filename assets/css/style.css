@@ -62,6 +62,7 @@ header {
     background-size: cover;
     height: 350px;
     width: 100%;
+    
 }
 
 #searchBar {
@@ -74,16 +75,33 @@ header {
     padding: 5px;
     text-align: center;
     font-size: 17px;
-    background: rgba(255, 255, 255, 0.64);
+    
+
 }
 
 /* categorie de la page d'accueil */
 .div-body-categorie {
     margin-top: 15px;
 }
+
 .title-categorie {
     text-align: center;
     color: white;
     font-size: 45px;
     text-decoration: 3px underline;
+}
+
+/* TEST TEST TEST TEST TEST TEST TEST */
+.div-parent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: brown;
+}
+
+.div-enfant1 {
+    height: 150px;
+    width: 150px;
+    background-color: azure;
+    margin: 10px;
 }
