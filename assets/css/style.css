@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700;1,1000&family=Satisfy&display=swap');
 
 * {
     box-sizing: border-box;
     background-color: bisque;
     margin: 0;
-    font-family: 'Satisfy', cursive;
-}
+    font-family: 'Nunito Sans', sans-serif;}
 
 header {
     position: relative;
+    font-weight: 700;
     background-image: url(/assets/img/branding/wave.png);
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0px 1px 20px 5px black;
     z-index: 1;
+    height: 120px;
+
 }
 .navbar {
     display: flex;
@@ -27,9 +29,38 @@ header {
 }
 
 .logo {
-    width: 120px;
+    width: 150px;
     background: transparent;
+    transition: .2s ease-in-out;
+    animation: animateHeart 1.2s infinite;
 }
+
+
+/* .logo:hover {
+    transform:  scale(2);
+} */
+
+
+@keyframes animateHeart {
+    0% {
+      transform: rotate(-20deg) scale(0.8);
+    }
+    5% {
+      transform: rotate(0deg) scale(0.9);
+    }
+    10% {
+      transform:rotate(-20deg)  scale(0.8);
+    }
+    15% {
+      transform:rotate(0deg) scale(1);
+    }
+    50% {
+      transform: rotate(-20deg) scale(0.8);
+    }
+    100% {
+      transform: rotate(0deg) scale(0.8);
+    }
+  }
 
 .nav-menu {
     display: flex;
@@ -62,6 +93,7 @@ header {
     background-size: cover;
     height: 350px;
     width: 100%;
+    
 }
 
 #searchBar {
@@ -74,16 +106,145 @@ header {
     padding: 5px;
     text-align: center;
     font-size: 17px;
-    background: rgba(255, 255, 255, 0.64);
 }
 
 /* categorie de la page d'accueil */
 .div-body-categorie {
     margin-top: 15px;
+    
 }
+
 .title-categorie {
     text-align: center;
     color: white;
     font-size: 45px;
+    font-weight: 700;
+    font-style: italic;
     text-decoration: 3px underline;
+    background-color: transparent;
 }
+
+/* TEST TEST TEST TEST TEST TEST TEST */
+.div-parent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: brown;
+    margin-top: 15px;
+}
+
+.div-enfant0 {
+    background-image: url(/assets/img/categorie/burger.jpg);
+    border-radius: 5px;    
+    height: 350px;
+    width: 200px;
+    background-color: azure;
+    margin: 10px;
+    filter: brightness(60%);
+    transition: .3s ease-in-out;
+
+}
+
+
+
+.div-enfant1 {
+    background-image: url(/assets/img/categorie/pasta_cat.png);
+    border-radius: 5px;
+    background-position: right;
+    height: 350px;
+    width: 200px;
+    background-color: azure;
+    filter: brightness(60%);
+    margin: 10px;
+    transition: .3s ease-in-out;
+
+
+}
+
+
+.div-enfant2 {
+    background-image: url(/assets/img/categorie/salade_cat.png);
+    border-radius: 5px;
+    height: 350px;
+    width: 200px;
+    background-color: azure;
+    margin: 10px;
+    filter: brightness(60%);
+    transition: .3s ease-in-out;
+
+}
+
+
+.div-enfant3 {
+    background-image: url(/assets/img/categorie/sandwich_cat.png);
+    border-radius: 5px;
+    height: 350px;
+    width: 200px;
+    background-color: azure;
+    margin: 10px;
+    filter: brightness(60%);
+    transition: .3s ease-in-out;
+
+}
+
+
+.div-enfant4 {
+    background-image: url(/assets/img/categorie/wrap_cat.png);
+    border-radius: 5px;
+    height: 350px;
+    width: 200px;
+    background-color: azure;
+    margin: 10px;
+    filter: brightness(60%);
+    transition: .3s ease-in-out;
+
+}
+
+
+.div-enfant5 {
+    background-image: url(/assets/img/categorie/asian_food_cat.png);
+    border-radius: 5px;
+    height: 350px;
+    width: 200px;
+    background-color: azure;
+    filter: brightness(60%);
+    margin: 10px;
+    transition: .3s ease-in-out;
+
+}
+
+.div-enfant0:hover,
+.div-enfant1:hover,
+.div-enfant2:hover,
+.div-enfant3:hover,
+.div-enfant4:hover,
+.div-enfant5:hover {
+    filter:brightness(1);
+    cursor: pointer;
+}
+
+
+.div-plat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.title-plat {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    color: white;
+}
+
+.plat {
+    background-color: red;
+    height: 250px;
+    width: 250px;
+    margin: 0px 25px;
+}
+
+
+/* FOOTER DE FOOTER */
+
